@@ -8,7 +8,9 @@ CMS.init({
     backend: {
       name: "git-gateway",
       branch: "main",
+      repo: "treindev/astro-decap-blog-demo",
     },
+    site_url: "https://astro-decap-blog-demo.netlify.app",
     publish_mode: "editorial_workflow",
     media_folder: "src/assets",
     public_folder: "/src/assets",
