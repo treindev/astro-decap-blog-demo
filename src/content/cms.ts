@@ -9,15 +9,19 @@ CMS.init({
       name: "git-gateway",
       branch: "main",
     },
+    publish_mode: "editorial_workflow",
     media_folder: "src/assets",
     public_folder: "/src/assets",
     local_backend: true,
+    locale: "nl",
     collections: [
       {
         label: "Blog",
         name: "blog",
         folder: "src/content/blog",
         create: true,
+        slug: "{{slug}}",
+        preview_path: "/blog/{{slug}}",
         fields: [
           { label: "Title", name: "title", widget: "string" },
           { label: "Description", name: "description", widget: "string" },
@@ -30,3 +34,5 @@ CMS.init({
     ],
   },
 });
+
+CMS.registerPreviewStyle("/src/styles/global.css")
