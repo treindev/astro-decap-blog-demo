@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "decap-server & astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "decap-server & astro preview",
     "astro": "astro"
   },
   "dependencies": {
@@ -13,6 +13,10 @@
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
     "astro": "^5.12.0",
+    "decap-cms-app": "^3.8.0",
     "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "decap-server": "^3.3.0"
   }
 }
