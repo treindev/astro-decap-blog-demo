@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://astro-decap-blog-demo.netlify.app',
 	integrations: [mdx(), sitemap()],
 });
