@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "decap-server & astro dev",
     "build": "astro build",
-    "preview": "decap-server & astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
+    "@astrojs/netlify": "^6.5.2",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
     "astro": "^5.12.0",
